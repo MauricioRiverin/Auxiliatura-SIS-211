@@ -7,9 +7,10 @@ public class MainCliente {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Ingrese su nickname: ");
+        
         String nickname = scanner.nextLine();
 
-        SocketTcp client = new SocketTcp("127.0.0.1", 3000);
+        SocketTcp client = new SocketTcp("192.168.43.112",3002);
         client.connected();
 
         boolean conectado = true;
@@ -30,5 +31,5 @@ public class MainCliente {
         client.dissConnect();
         scanner.close();
     }
-    
 }
+

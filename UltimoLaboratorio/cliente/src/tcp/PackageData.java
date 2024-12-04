@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Calendar;
 import java.util.Date;
 
-public class PackageData implements Serializable{
+public class PackageData implements Serializable {
     private String nick;
     private String msn;
     private Date senddate;
@@ -48,5 +48,5 @@ public class PackageData implements Serializable{
     public void setIp(String ip) {
         this.ip = ip;
     }
-
 }
+

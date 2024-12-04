@@ -11,7 +11,7 @@ public class ServerClientSocket extends Thread {
     private ObjectOutputStream outDataServer;
     private Boolean isConnected;
     private SocketTcp server;
-    private OnEventLister listener;
+    private onEventLister listener;
     private String room = "";
 
     public ServerClientSocket(Socket clientSocket, SocketTcp server) {
@@ -27,7 +27,7 @@ public class ServerClientSocket extends Thread {
         }
     }
 
-    public void addEventListener(OnEventLister listener) {
+    public void addEventListener(onEventLister listener) {
         this.listener = listener;
     }
 
@@ -62,7 +62,6 @@ public class ServerClientSocket extends Thread {
         }
         disconnect();
     }
-    
 
     public void disconnect() {
         try {
@@ -72,8 +71,5 @@ public class ServerClientSocket extends Thread {
             e.printStackTrace();
         }
     }
-
-	public void addEventListener(Object listener2) {
-		throw new UnsupportedOperationException("Unimplemented method 'addEventListener'");
-	}
 }
+

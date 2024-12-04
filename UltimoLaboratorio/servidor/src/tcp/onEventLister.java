@@ -1,7 +1,6 @@
 package tcp;
 
-public interface OnEventLister {
+public interface onEventLister {
     public void join(String channelName, ServerClientSocket client);
-    
 }
 
